@@ -1,4 +1,5 @@
 ﻿using ObjectOrientationExercises.Inheritance;
+using ObjectOrientationExercises.Polymorphism;
 
 namespace ObjectOrientationExercises
 {
@@ -6,7 +7,7 @@ namespace ObjectOrientationExercises
     {
         static void Main(string[] args)
         {
-
+            /*
             //  Abstraction Start
             Shape[] shapes = new Shape[4];
 
@@ -34,6 +35,27 @@ namespace ObjectOrientationExercises
             Console.WriteLine( samantha.CanQualifyForCourse());
         
             //  Inheritance End
+        */
+      /*      Animal germanShepard = new Dog();
+            germanShepard.MakeNoise();
+
+            Animal lion = new Lion();
+            lion.MakeNoise();
+
+            Animal roo = new Kangaroo();
+            roo.MakeNoise();*/
+
+            Animal[] animals = new Animal[3];
+            animals[0] = new Dog();
+            animals[1] = new Lion();
+            animals[2] = new Kangaroo();
+
+        
+            for(int i = 0; i < animals.Length; i++)
+            {
+                Animal animal = animals[i];
+                animal.MakeNoise();
+            }
         }
     }
 }
